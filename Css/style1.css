@@ -1,0 +1,324 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    color: #444;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+  }
+  
+  /* Header Section */
+  header {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  header .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+  }
+  
+  .navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffd700;
+  }
+  
+  header .hero-content h1 {
+    font-size: 4.5rem;
+    animation: fadeInDown 1.5s ease;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  header .hero-content p {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  header .hero-content .btn {
+    padding: 12px 35px;
+    font-size: 1rem;
+    background-color: #ffd700;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  header .hero-content .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Forms */
+  form {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+  }
+  
+  form:hover {
+    transform: translateY(-10px);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #ffa500;
+  }
+  
+  /* Cards */
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  /* Responsive Design */
+
+/* Mobile First Design */
+.navbar ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+  header .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  header .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  header .hero-content .btn {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+
+  form {
+    max-width: 90%;
+    padding: 15px 20px;
+  }
+
+  .card {
+    margin: 15px auto;
+  }
+}
+
+/* Phones and smaller devices */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  header .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  header .hero-content p {
+    font-size: 1rem;
+  }
+
+  header .hero-content .btn {
+    font-size: 0.8rem;
+    padding: 8px 20px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Phones and very small screens */
+@media (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  header .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  header .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  header .hero-content .btn {
+    font-size: 0.7rem;
+    padding: 6px 15px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  form label {
+    font-size: 0.9rem;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}

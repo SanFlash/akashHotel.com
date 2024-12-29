@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Darshan - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .contact-info:hover {
+            transform: translateY(-10px);
+        }
+        .contact-info i {
+            color: #0066cc;
+            margin-right: 10px;
+        }
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .social-icons i {
+            font-size: 1.5rem;
+            margin: 10px;
+            color: #0066cc;
+            transition: color 0.3s ease;
+        }
+        .social-icons i:hover {
+            color: #ff6600;
+        }
+        .follow-us {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="bg-dark text-white py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hotel Darshan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio1.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bookNow.html">Book Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactUS.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Contact Us Section -->
+<section class="container py-5" data-aos="fade-up">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contact-info" data-aos="fade-right">
+                <h4>Get In Touch</h4>
+                <p>If you have any questions or need more information about our services, feel free to reach out to us.</p>
+                <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> contact@hoteldarshan.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123, Hotel Road, City Name</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <form data-aos="fade-left">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Follow Us Section -->
+<section class="follow-us">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4 text-center">
+    <p>© 2024 Hotel Darshan | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
